@@ -1,0 +1,194 @@
+/* --- Pengaturan Body & Layout Utama --- */
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f4f6f8; /* Latar belakang halaman yang bersih & lembut */
+	font-family: 'Raleway', sans-serif;
+}
+
+.container {
+	width: 900px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Bayangan halus agar tampilan lebih modern */
+}
+
+/* --- Pengaturan Header & Logo --- */
+.header {
+	background-color: #ffffff; /* Putih murni agar menyatu sempurna dengan logo */
+	padding: 20px 0 10px 0;
+	text-align: center;
+	border-bottom: 1px solid #edf2f7;
+}
+
+.logo img {
+	width: 180px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
+
+/* --- Pengaturan Menu Navigasi --- */
+.menu ul {
+	padding: 0;
+	margin: 15px 0 0 0;
+	list-style: none;
+}
+
+.menu ul li {
+	display: inline-block;
+	position: relative;
+	margin: 0 10px;
+}
+
+.menu ul li a {
+	padding: 8px 16px;
+	text-decoration: none;
+	color: #2c3e50; /* Warna Navy/Slate matching warna logo */
+	font-weight: 600;
+	font-size: 14px;
+	letter-spacing: 1px;
+	transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+	color: #c5a059; /* Aksen Gold lembut saat di-hover */
+}
+
+/* --- Pengaturan Submenu (Dropdown) --- */
+ul.submenu {
+	background-color: #ffffff;
+	border: 1px solid #e2e8f0;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+	text-align: left;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	display: none;
+	padding: 10px 0;
+	z-index: 100;
+	min-width: 150px;
+}
+
+ul.submenu li {
+	display: block;
+	margin: 0;
+}
+
+ul.submenu li a {
+	display: block;
+	padding: 8px 16px;
+	color: #4a5568;
+	font-weight: 500;
+}
+
+ul.submenu li a:hover {
+	background-color: #f8fafc;
+	color: #c5a059;
+}
+
+.menu ul li:hover ul.submenu {
+	display: block;
+}
+
+/* --- Pengaturan Jumbotron (Banner Utama) --- */
+.jumbotron {
+	width: 100%;
+	padding: 90px 40px;
+	box-sizing: border-box;
+	text-align: center;
+	color: #ffffff;
+	background-color: #2c3e50;
+	background-image: url(https://images.unsplash.com/photo-1515111293107-b0cd6448f5f6?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=e4f56141064dbe63db663bb7a2c73b71&auto=format&fit=crop&w=1350&q=80);
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(20, 30, 45, 0.55); /* Layer gelap bernuansa Navy untuk kontras teks */
+}
+
+.jumbotron h2,
+.jumbotron p {
+	position: relative;
+	z-index: 2;
+}
+
+.jumbotron h2 {
+	font-size: 28px;
+	margin-bottom: 15px;
+	letter-spacing: 1px;
+}
+
+.jumbotron p {
+	font-size: 15px;
+	line-height: 1.6;
+	max-width: 650px;
+	margin: 0 auto;
+	font-weight: 300;
+}
+
+/* --- Pengaturan Bagian Produk --- */
+.content {
+	background-color: #f8f9fa;
+	padding: 40px 20px;
+	overflow: auto;
+}
+
+.content h2 {
+	text-align: center;
+	color: #1e293b;
+	margin-bottom: 30px;
+	font-size: 22px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+
+.thumbnail {
+	background-color: #ffffff;
+	text-align: center;
+	padding: 15px;
+	width: 240px;
+	margin: 0 10px 20px 10px;
+	float: left;
+	box-sizing: border-box;
+	border-radius: 6px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.thumbnail:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.thumbnail img {
+	width: 100%;
+	height: 140px;
+	object-fit: cover;
+	border-radius: 4px;
+}
+
+.thumbnail p {
+	color: #c5a059;
+	font-weight: 700;
+	font-size: 15px;
+	margin-top: 12px;
+	margin-bottom: 5px;
+}
+
+/* --- Pengaturan Footer --- */
+.footer {
+	background-color: #ffffff;
+	border-top: 1px solid #edf2f7;
+	padding: 25px;
+	text-align: center;
+	color: #718096;
+	font-size: 13px;
+}
